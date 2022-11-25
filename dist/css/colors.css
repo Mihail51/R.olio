@@ -1,0 +1,95 @@
+:root {
+	--white: #fff;
+	--salat: #688800;
+	--text: #4a4a4a;
+	--grey: #949494;
+	--meet: #D73A31;
+	--east: #E67F10;
+	--italian: #009246;
+	--gradient-green1: linear-gradient(320.69deg, #536614 15.36%, #97C20B 84.86%);
+	--gradient-green2: linear-gradient(320.42deg, #076534 15.36%, #00DB69 82.23%);
+	--gradient-orange: linear-gradient(324.18deg, #BA6400 14.36%, #FF9D34 85.34%);
+	--gradient-red: linear-gradient(321.31deg, #99160E 15.37%, #E84239 81.98%);
+	--bg-salat: #bfd087;
+	--bg-italian: #8BDFB4;
+	--bg-meet: #E8847E;
+	--bg-east: #F4B979;
+	--txt-salat: #BFD087;
+	--txt-salat-active: #546B06;
+	--txt-italian: #69D59E;
+	--txt-italian-active: #116137;
+	--txt-meet: #E8847E;
+	--txt-meet-active: #73120D;
+	--txt-east: #F1A757;
+	--txt-east-active: #BD690D;
+	--bg-footer: #728536;
+}
+.white {
+	color: var(--white);
+}
+.text {
+	color: var(--text);
+}
+.salat {
+	color: var(--salat);
+}
+.bg-salat, .bg-salat-hover:hover {
+	background: var(--bg-salat);
+}  
+.txt-salat {
+	color: var(--txt-salat);
+}
+.txt-salat-active, .txt-salat-hover:hover {
+	color: var(--txt-salat-active);
+}
+.italian {
+	color: var(--italian);
+}
+.bg-italian, .bg-italian-hover:hover {
+	background: var(--bg-italian);
+}
+.txt-italian {
+	color: var(--txt-italian);
+}
+.txt-italian-active, .txt-italian-hover:hover {
+	color: var(--txt-italian-active);
+}
+.meet {
+	color: var(--meet);
+}
+.bg-meet, .bg-meet-hover:hover {
+	background: var(--bg-meet);
+}
+.txt-meet {
+	color: var(--txt-meet);
+}
+.txt-meet-active, .txt-meet-hover:hover {
+	color: var(--txt-meet-active);
+}
+.east {
+	color: var(--east);
+}
+.bg-east, .bg-east-hover:hover {
+	background: var(--bg-east);
+}
+.txt-east {
+	color: var(--txt-east);
+}
+.txt-east-active, .txt-east-hover:hover {
+	color: var(--txt-east-active);
+}
+.gradient-green1, .bg-but-salat:hover {
+	background: var(--gradient-green1);
+}
+.gradient-green2, .bg-but-italian:hover {
+	background: var(--gradient-green2);
+}
+.gradient-red, .bg-but-meet:hover {
+	background: var(--gradient-red);
+}
+.gradient-orange, .bg-but-east:hover {
+	background: var(--gradient-orange);
+}
+.bg-footer {
+	background: var(--bg-footer);
+}

@@ -1,0 +1,17 @@
+
+
+Roboto Light
+Roboto Medium
+Roboto Regular
+Amatic SC Regular
+Amatic SC Bold
+El Messiri Regular
+Open Sans Regular
+
+    font-family: 'Amatic SC', cursive;
+
+    font-family: 'El Messiri', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
