@@ -78,7 +78,7 @@
 										<p class="text desc offer__desc">Название говорит само за себя. Это идеальная заправка, которая даже скучной и привычной капусте придаст неповторимый вкус и аромат.</p>
 										<div class="amount offer__amount salat">2</div>
 										<div class="buttons offer__buttons">
-											<button class="button offer__button salat bg-but-salat">ПОДРОБНЕЕ</button>
+											<label for="salat" class="button offer__button salat bg-but-salat">ПОДРОБНЕЕ</label>
 											<button class="button offer__button salat bg-but-salat">В КОРЗИНУ</button>
 										</div>
 									</figcaption>
@@ -104,7 +104,7 @@
 										<p class="text desc offer__desc text">Идеальное решение для легкого и быстрого маринада мяса, можно добавить капельку масла и после приготовления. </p>
 										<div class="amount offer__amount italian">2</div>
 										<div class="buttons offer__buttons">
-											<button class="button offer__button italian bg-but-italian">ПОДРОБНЕЕ</button>
+											<label for="italian" class="button offer__button italian bg-but-italian">ПОДРОБНЕЕ</label>
 											<button class="button offer__button italian bg-but-italian">В КОРЗИНУ</button>
 										</div>
 									</figcaption>
@@ -130,7 +130,7 @@
 										<p class="text desc offer__desc text">Название говорит само за себя. Это идеальная заправка, которая даже скучной и привычной капусте придаст неповторимый вкус и аромат.</p>
 										<div class="amount offer__amount meet">2</div>
 										<div class="buttons offer__buttons">
-											<button class="button offer__button meet bg-but-meet">ПОДРОБНЕЕ</button>
+											<label for="meet" class="button offer__button meet bg-but-meet">ПОДРОБНЕЕ</label>
 											<button class="button offer__button meet bg-but-meet">В КОРЗИНУ</button>
 										</div>
 									</figcaption>
@@ -156,7 +156,7 @@
 										<p class="text desc offer__desc">Идеальное решение для легкого и быстрого маринада мяса, можно добавить капельку масла и после приготовления.</p>
 										<div class="amount offer__amount east">2</div>
 										<div class="buttons offer__buttons">
-											<button class="button offer__button east bg-but-east">ПОДРОБНЕЕ</button>
+											<label for="east" class="button offer__button east bg-but-east">ПОДРОБНЕЕ</label>
 											<button class="button offer__button east bg-but-east">В КОРЗИНУ</button>
 										</div>
 									</figcaption>
@@ -177,11 +177,11 @@
 					<ul class="content maslo__content">
 						<li class="card maslo__card maslo__card_1">
 							<figure>
-								<div class="image card__image">
-									<div class="ellipse card__ellipse card__ellipse_outerh"></div>
-									<div class="ellipse card__ellipse card__ellipse_interior"></div>
-									<img class="image maslo__card__image maslo__card__image_pending" width="41.53" height="179.54" src="images/dlia_salata_card.png" alt="">
-									<img class="image maslo__card__image maslo__card__image_active" src="#" alt="">  
+								<div class="image maslo__card__image">
+									<input type="radio" name="details" id="salat">
+									<div class="ellipse card__ellipse card__ellipse_outerh gradient-green1"></div>
+									<div class="ellipse card__ellipse card__ellipse_interior gradient-green1"></div>
+									<img class="image maslo__card__image_pending" width="41.53" height="179.54" src="images/dlia_salata_card.png" alt="">
 								</div>
 								<figcaption>
 									<h3 class="caption maslo__card__caption salat">Масло “Для салата”</h3>
@@ -207,11 +207,11 @@
 						</li>
 						<li class="card maslo__card maslo__card_2">
 							<figure>
-								<div class="image card__image">
-									<div class="ellipse card__ellipse card__ellipse_outerh"></div>
-									<div class="ellipse card__ellipse card__ellipse_interior"></div>
-									<img class="image maslo__card__image maslo__card__image_pending" width="41.53" height="179.54" src="images/italianskoe_card.png" alt="">
-									<img class="image maslo__card__image maslo__card__image_active" src="#" alt=""> 
+								<div class="image maslo__card__image">
+									<input type="radio" name="details" id="italian">
+									<div class="ellipse card__ellipse card__ellipse_outerh gradient-green2"></div>
+									<div class="ellipse card__ellipse card__ellipse_interior gradient-green2"></div>
+									<img class="image maslo__card__image_pending" width="41.53" height="179.54" src="images/italianskoe_card.png" alt="">
 								</div>
 								<figcaption>
 									<h3 class="caption maslo__card__caption italian">Масло “Итальянское”</h3>
@@ -237,11 +237,11 @@
 						</li>
 						<li class="card maslo__card maslo__card_3">
 							<figure>
-								<div class="image card__image">
-									<div class="ellipse card__ellipse card__ellipse_outerh"></div>
-									<div class="ellipse card__ellipse card__ellipse_interior"></div>
-									<img class="image maslo__card__image maslo__card__image_pending" width="41.53" height="179.54" src="images/dlia_myasa_card.png" alt="">
-									<img class="image maslo__card__image maslo__card__image_active" src="#" alt=""> 
+								<div class="image maslo__card__image">
+									<input type="radio" name="details" id="meet">
+									<div class="ellipse card__ellipse card__ellipse_outerh gradient-red"></div>
+									<div class="ellipse card__ellipse card__ellipse_interior gradient-red"></div>
+									<img class="image maslo__card__image_pending" width="41.53" height="179.54" src="images/dlia_myasa_card.png" alt="">
 								</div>
 								<figcaption>
 									<h3 class="caption maslo__card__caption meet">Масло “Для мяса”</h3>
@@ -267,11 +267,11 @@
 						</li>
 						<li class="card maslo__card maslo__card_4">
 							<figure>
-								<div class="image card__image">
-									<div class="ellipse card__ellipse card__ellipse_outerh"></div>
-									<div class="ellipse card__ellipse card__ellipse_interior"></div>
-									<img class="image maslo__card__image maslo__card__image_pending" width="41.53" height="179.54" src="images/vostochnoe_card.png" alt="">
-									<img class="image maslo__card__image maslo__card__image_active" src="#" alt=""> 
+								<div class="image maslo__card__image">
+									<input type="radio" name="details" id="east">
+									<div class="ellipse card__ellipse card__ellipse_outerh gradient-orange"></div>
+									<div class="ellipse card__ellipse card__ellipse_interior gradient-orange"></div>
+									<img class="image maslo__card__image_pending" width="41.53" height="179.54" src="images/vostochnoe_card.png" alt="">
 								</div>
 								<figcaption>
 									<h3 class="caption maslo__card__caption east">Масло “Восточное”</h3>

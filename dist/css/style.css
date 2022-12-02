@@ -181,7 +181,7 @@ h2 {
 	justify-content: flex-end;
 	align-items: center;
 }
-.card__image {
+.maslo__card__image {
 	position: relative;
 	width: 244px;
 	height: 244px;
@@ -190,12 +190,92 @@ h2 {
 	justify-content: center;
 	align-items: center;
 }
-.maslo__card__image {
+.card__ellipse_outerh {
+	width: 284px;
+	height: 284px;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+}
+.card__ellipse_interior {
+	width: 252px;
+	height: 252px;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+}
+.maslo__card__image_pending {
 	width: 53px;
 	height: 229px;
 }
-.maslo__card__image_active {
+#salat, #italian, #meet, #east {
 	display: none;
+}
+#salat:checked ~ .maslo__card__image_pending {
+	width: 68px;
+	height: 294px;
+	transform: rotate(9.54deg) translateY(-54px);
+	filter: drop-shadow(4px 10px 10px rgba(52, 56, 1, 0.25));
+	transition-duration: .2s;
+}
+#salat:checked ~ .card__ellipse_outerh {
+	transition-duration: .2s;
+	opacity: 0.2;
+	transform: translateY(-54px);
+}
+#salat:checked ~ .card__ellipse_interior {
+	transition-duration: .2s;
+	opacity: 1;
+	transform: translateY(-54px);
+}
+#italian:checked ~ .maslo__card__image_pending {
+	width: 85px;
+	height: 295px;
+	transform: rotate(9.49deg) translateY(-54px);
+	filter: drop-shadow(4px 10px 15px rgba(0, 63, 30, 0.15));
+	transition-duration: .2s;
+}
+#italian:checked ~ .card__ellipse_outerh {
+	transition-duration: .2s;
+	opacity: 0.2;
+	transform: translateY(-54px);
+}
+#italian:checked ~ .card__ellipse_interior {
+	transition-duration: .2s;
+	opacity: 1;
+	transform: translateY(-54px);
+}
+#meet:checked ~ .maslo__card__image_pending {
+	width: 68px;
+	height: 294px;
+	transform: rotate(10.9deg) translateY(-54px);
+	filter: drop-shadow(4px 10px 15px rgba(87, 0, 0, 0.15));
+	transition-duration: .2s;
+}
+#meet:checked ~ .card__ellipse_outerh {
+	transition-duration: .2s;
+	opacity: 0.2;
+	transform: translateY(-54px);
+}
+#meet:checked ~ .card__ellipse_interior {
+	transition-duration: .2s;
+	opacity: 1;
+	transform: translateY(-54px);
+}
+#east:checked ~ .maslo__card__image_pending {
+	width: 68px;
+	height: 306px;
+	transform: rotate(9.94deg) translateY(-54px);
+	filter: drop-shadow(4px 10px 15px rgba(111, 57, 0, 0.15));
+	transition-duration: .2s;
+}
+#east:checked ~ .card__ellipse_outerh {
+	transition-duration: .2s;
+	opacity: 0.2;
+	transform: translateY(-54px);
+}
+#east:checked ~ .card__ellipse_interior {
+	transition-duration: .2s;
+	opacity: 1;
+	transform: translateY(-54px);
 }
 .maslo__card figure figcaption {
 	width: 100%;
