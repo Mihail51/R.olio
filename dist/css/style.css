@@ -68,6 +68,16 @@ h2 {
 	border-radius: 50%;
 	z-index: -1;
 }
+.number {
+  all: unset;
+  -moz-appearance: textfield;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.number::-webkit-inner-spin-button { 
+  display: none;
+}
 
 /* HEADER */
 .header__wrap {
@@ -308,17 +318,19 @@ h2 {
 	position: relative;
 	width: 90px;
 	height: 24px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
 	font-size: 16px;
 	line-height: 32px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
-.maslo__card__amount::before, .maslo__card__amount::after {
+.maslo__card__amount input {
+	width: 30px;
+}
+.maslo__card__amount button {
 	width: 24px;
 	height: 24px;
+	background: none;
+	opacity: 0.5;
+	border: 1px solid var(--grey);
+	border-radius: 8px;
 }
 .maslo__card__inform {
 	width: 134px;
