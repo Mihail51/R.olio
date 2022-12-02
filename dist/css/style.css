@@ -736,3 +736,14 @@ h2 {
 	width: 24px;
 	height: 24px;
 }
+
+/*  */
+.shopping-cart__wrap {
+	width: 1102px;
+	min-height: 1186px;
+	margin: 0 auto;
+}
+.shopping-cart__close img {
+	width: 32px;
+	height: 32px;
+}
