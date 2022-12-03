@@ -504,8 +504,21 @@
 			</div>
 			<div class="form shopping-cart__form">
 				<form action="#" method="post" class="form shopping-cart__form" id="shopping-cart__form">
-					<fieldset class="customer-data" id="shopping-cart__form"></fieldset>
-					<fieldset class="delivery-method" id="shopping-cart__form"></fieldset>
+					<fieldset class="customer-data" id="shopping-cart__form">
+						<label for="customer-name">Имя получателя</label>
+						<input type="text" name="name" id="customer-name" placeholder="Фамилия Имя Отчество">
+						<label for="customer-tel">Контактный номер телефона</label>
+						<input type="tel" name="tel" id="customer-tel" placeholder="+380">
+					</fieldset>
+					<fieldset class="delivery-method" id="shopping-cart__form">
+						<legend>Способы доставки</legend>
+						<input type="radio" name="delivery-method" id="new-mail:">
+						<label for="new-mail:">Новая почта:</label>
+						<input type="radio" name="delivery-method" id="ukrposhta">
+						<label for="ukrposhta">Укрпочта</label>
+						<input type="radio" name="delivery-method" id="pickup">
+						<label for="pickup">Самовывоз</label>
+					</fieldset>
 					<fieldset class="payment-method]" id="shopping-cart__form"></fieldset>
 					<fieldset class="shopping-cart__form__footer" id="shopping-cart__form"></fieldset>
 				</form>
