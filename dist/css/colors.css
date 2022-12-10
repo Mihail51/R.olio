@@ -3,6 +3,7 @@
 	--salat: #688800;
 	--text: #4a4a4a;
 	--grey: #949494;
+	--grey-6: #BFBFBF;
 	--meet: #D73A31;
 	--east: #E67F10;
 	--italian: #009246;
@@ -92,4 +93,7 @@
 }
 .bg-footer {
 	background: var(--bg-footer);
+}
+.grey-6 {
+	color: var(--grey-6);
 }

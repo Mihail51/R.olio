@@ -503,24 +503,113 @@
 				<div class="product shopping-cart__product"></div>
 			</div>
 			<div class="form shopping-cart__form">
-				<form action="#" method="post" class="form shopping-cart__form" id="shopping-cart__form">
+				<form action="#" method="post" id="shopping-cart__form">
 					<fieldset class="customer-data" id="shopping-cart__form">
-						<label for="customer-name">Имя получателя</label>
-						<input type="text" name="name" id="customer-name" placeholder="Фамилия Имя Отчество">
-						<label for="customer-tel">Контактный номер телефона</label>
-						<input type="tel" name="tel" id="customer-tel" placeholder="+380">
+						<label for="customer-name" class="customer-name text">Имя получателя</label>
+						<input type="text" name="name" id="customer-name" class="grey-6" placeholder="Фамилия Имя Отчество">
+						<label for="customer-tel" class="customer-tel text">Контактный номер телефона</label>
+						<input type="tel" name="tel" id="customer-tel" class="grey-6" placeholder="+380">
+					</fieldset>
+					<fieldset class="payment-method" id="shopping-cart__form">
+						<legend>Способ оплаты</legend>
+						<div class="way credit-card">
+							<input type="radio" name="payment-method" id="credit-card">
+							<label for="credit-card">- на карту</label>
+							<form class="form credit-card__form">
+								<div class="header credit-card__header">
+									<h4 class="heading credit-card__heading">Детали кредитной карты</h4>
+								</div>
+								<div class="content credit-card__content">
+									<input type="text" name="card-name" id="card-name" placeholder="Ваше имя">
+									<input type="text" name="card-number" id="card-number" placeholder="Номер карты">
+									<div class="dates credit-card__dates">
+										<div class="month credit-card__month">
+											<select name="Month"> 
+												<option value="january">Январь</option>
+												<option value="february">Февраль</option>
+												<option value="march">Март</option>
+												<option value="april">Апрель</option>
+												<option value="may">Май</option>
+												<option value="june">Июнь</option>
+												<option value="july">Июль</option>
+												<option value="august">Август</option>
+												<option value="september">Сентябрь</option>
+												<option value="october">Октябрь</option>
+												<option value="november">Ноябрь</option>
+												<option value="december">Декабрь</option>
+											</select>
+										</div>
+										<div class="year credit-card__year">
+											<select name="Year">
+												<option value="2022">2022</option>
+												<option value="2023">2023</option>
+												<option value="2024">2024</option>
+												<option value="2025">2025</option>
+												<option value="2026">2026</option>
+												<option value="2027">2027</option>
+												<option value="2028">2028</option>
+												<option value="2029">2029</option>
+												<option value="2030">2030</option>
+												<option value="2031">2031</option>
+												<option value="2032">2032</option>
+												<option value="2033">2033</option>
+											</select>
+										</div>
+									</div>
+									<div class="verification credit-card__verification">
+										<div class="cvv__input">
+											<input type="text" name="cvv" placeholder="CVV">
+										</div>
+										<div class="cvv__detalis">
+											<p>3 или 4 цифры, расположенные</br> на обратной стороне карты</p>
+										</div>
+									</div>
+									<button type="submit"><a href="#"></a>Продолжить</button>
+									<button type="submit"><a href="#"></a>Платить с помощью</button>
+								</div>
+							</form>
+						</div>
+						<div class="way upon-receipt">
+							<input type="radio" name="payment-method" id="upon-receipt">
+							<label for="upon-receipt">- при получении</label>
+						</div>
 					</fieldset>
 					<fieldset class="delivery-method" id="shopping-cart__form">
 						<legend>Способы доставки</legend>
-						<input type="radio" name="delivery-method" id="new-mail:">
-						<label for="new-mail:">Новая почта:</label>
-						<input type="radio" name="delivery-method" id="ukrposhta">
-						<label for="ukrposhta">Укрпочта</label>
-						<input type="radio" name="delivery-method" id="pickup">
-						<label for="pickup">Самовывоз</label>
+						<div class="way new-mail">
+							<input type="radio" name="delivery-method" id="new-mail">
+							<label for="new-mail">Новая почта:</label>
+							<div class="form new-mail__form">
+								<h3 class="heading new-mail__heading text">Новая почта:</h3>
+								<input type="text" name="city" class="grey-6" id="city" placeholder="Город">
+								<input type="text" name="post" class="grey-6" id="post" placeholder="Отделение №">
+							</div>
+						</div>
+						<div class="way ukrposhta">
+							<input type="radio" name="delivery-method" id="ukrposhta">
+							<label for="ukrposhta">Укрпочта</label>
+							<div class="form ukrposhta__form">
+								<h3 class="heading ukrposhta__heading text">Укрпочта</h3>
+								<input type="text" name="index" class="grey-6" id="index" placeholder="49000">
+								<input type="text" name="city-1" class="grey-6" id="city-1" placeholder="Город">
+								<input type="text" name="street" class="grey-6" id="street" placeholder="Улица">
+								<input type="text" name="house" class="grey-6" id="house" placeholder="Дом">
+								<input type="text" name="additionally" class="grey-6" id="additionally" placeholder="Дополнительно (подъезд, квартира и т.п.)">
+							</div>
+						</div>
+						<div class="way pickup">
+							<input type="radio" name="delivery-method" id="pickup">
+							<label for="pickup">Самовывоз</label>
+							<div class="form pickup__form"></div>
+						</div>
 					</fieldset>
-					<fieldset class="payment-method]" id="shopping-cart__form"></fieldset>
-					<fieldset class="shopping-cart__form__footer" id="shopping-cart__form"></fieldset>
+					<fieldset class="shopping-cart__form__footer" id="shopping-cart__form">
+						<textarea name="massage" id="message" cols="30" rows="10" placeholder="Ваш комментарий к заказу"></textarea>
+						<div class="buttons shopping-cart__form__buttons">
+							<input type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+							<input type="reset" value="СБРОСИТЬ">
+						</div>
+					</fieldset>
 				</form>
 			</div>
 			<div class="footer shopping-cart__footer"></div>
