@@ -219,70 +219,70 @@ h2 {
 #salat, #italian, #meet, #east {
 	display: none;
 }
-#salat:checked ~ .maslo__card__image_pending {
+#salat:checked ~ section img[class$="maslo__card__image_pending_salat"] {
 	width: 68px;
 	height: 294px;
 	transform: rotate(9.54deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 10px rgba(52, 56, 1, 0.25));
 	transition-duration: .2s;
 }
-#salat:checked ~ .card__ellipse_outerh {
+#salat:checked ~ section div[class$="gradient-green1"]:nth-child(1) {
 	transition-duration: .2s;
 	opacity: 0.2;
 	transform: translateY(-54px);
 }
-#salat:checked ~ .card__ellipse_interior {
+#salat:checked ~ section div[class$="gradient-green1"]:nth-child(2) {
 	transition-duration: .2s;
 	opacity: 1;
 	transform: translateY(-54px);
 }
-#italian:checked ~ .maslo__card__image_pending {
+#italian:checked ~ section img[class$="maslo__card__image_pending_italian"] {
 	width: 85px;
 	height: 295px;
 	transform: rotate(9.49deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 15px rgba(0, 63, 30, 0.15));
 	transition-duration: .2s;
 }
-#italian:checked ~ .card__ellipse_outerh {
+#italian:checked ~ section div[class$="gradient-green2"]:nth-child(1) {
 	transition-duration: .2s;
 	opacity: 0.2;
 	transform: translateY(-54px);
 }
-#italian:checked ~ .card__ellipse_interior {
+#italian:checked ~ section div[class$="gradient-green2"]:nth-child(2) {
 	transition-duration: .2s;
 	opacity: 1;
 	transform: translateY(-54px);
 }
-#meet:checked ~ .maslo__card__image_pending {
+#meet:checked ~ section img[class$="maslo__card__image_pending_meet"] {
 	width: 68px;
 	height: 294px;
 	transform: rotate(10.9deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 15px rgba(87, 0, 0, 0.15));
 	transition-duration: .2s;
 }
-#meet:checked ~ .card__ellipse_outerh {
+#meet:checked ~ section div[class$="gradient-red"]:nth-child(1) {
 	transition-duration: .2s;
 	opacity: 0.2;
 	transform: translateY(-54px);
 }
-#meet:checked ~ .card__ellipse_interior {
+#meet:checked ~ section div[class$="gradient-red"]:nth-child(2) {
 	transition-duration: .2s;
 	opacity: 1;
 	transform: translateY(-54px);
 }
-#east:checked ~ .maslo__card__image_pending {
+#east:checked ~ section img[class$="maslo__card__image_pending_east"] {
 	width: 68px;
 	height: 306px;
 	transform: rotate(9.94deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 15px rgba(111, 57, 0, 0.15));
 	transition-duration: .2s;
 }
-#east:checked ~ .card__ellipse_outerh {
+#east:checked ~ section div[class$="gradient-orange"]:nth-child(1) {
 	transition-duration: .2s;
 	opacity: 0.2;
 	transform: translateY(-54px);
 }
-#east:checked ~ .card__ellipse_interior {
+#east:checked ~ section div[class$="gradient-orange"]:nth-child(2) {
 	transition-duration: .2s;
 	opacity: 1;
 	transform: translateY(-54px);
@@ -747,4 +747,152 @@ h2 {
 .social__image {
 	width: 24px;
 	height: 24px;
+}
+
+/*  */
+.shopping-cart__wrap {
+	width: 1102px;
+	min-height: 1186px;
+	padding: 56px;
+	margin: 0 auto;
+	flex-direction: column;
+}
+.shopping-cart__header {
+	width: 100%;
+	height: 104px;
+	padding-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.shopping-cart__heading {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 40px;
+	margin: 0;
+}
+.shopping-cart__close img {
+	width: 32px;
+	height: 32px;
+	margin: 24px auto;
+}
+.shopping-cart__form {
+	width: 100%;
+	height: auto;
+	margin: 24px auto;
+}
+.shopping-cart__form form {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.customer-data {
+	width: 486px;
+	height: auto;
+	padding: 0;
+	border: none;
+}
+.customer-name, .customer-tel {
+	display: block;
+	width: 419px;
+	height: 22px;
+	margin-top: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: left;
+}
+#customer-name, #customer-tel {
+	width: 100%;
+	height: 40px;
+	margin: 4px auto;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+.payment-method {
+	width: 360px;
+	height: auto;
+}
+.delivery-method {
+	width: 100%;
+	height: auto;
+	margin: 24px 0;
+}
+.new-mail__heading, .ukrposhta__heading {
+	flex-basis: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: left;
+}
+.new-mail__form input {
+	width: 486px;
+	height: 40px;
+	margin: 12px 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+.ukrposhta__form {
+	width: 360px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.ukrposhta__form input {
+	height: 40px;
+	margin: 12px 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+#index {
+	width: 35%;
+}
+#city-1 {
+	width: 60%;
+}
+#street {
+	width: 60%;
+}
+#house {
+	width: 35%;
+}
+#additionally {
+	flex-basis: 100%;
+}
+.new-mail__form, .ukrposhta__form, .pickup__form {
+	display: none;
+}
+#new-mail:checked ~ .new-mail__form {
+	display: block;
+}
+#ukrposhta:checked ~ .ukrposhta__form {
+	display: flex;
+}
+#pickup:checked ~ .pickup__form {
+	display: block;
+}
+.way {
+	display: block;
+}
+
+.credit-card__form {
+	width: 360px;
+	height: 400px;
+    margin: 60px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
 }
