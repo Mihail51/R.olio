@@ -166,6 +166,13 @@
 .offer__amount input {
 	width: 50px;
 }
+.offer__amount button {
+	width: 32px;
+	height: 32px;
+	background: none;
+	border-radius: 8px;
+	border: 1px solid rgba(148, 148, 148, 0.5);
+}
 .offer__amount::before, .offer__amount::after {
 	width: 32px;
 	height: 32px;
