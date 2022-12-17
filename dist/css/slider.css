@@ -163,6 +163,9 @@
 	line-height: 32px;
 	text-align: center;
 }
+.offer__amount input {
+	width: 50px;
+}
 .offer__amount::before, .offer__amount::after {
 	width: 32px;
 	height: 32px;
