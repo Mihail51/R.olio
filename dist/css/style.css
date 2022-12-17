@@ -219,70 +219,70 @@ h2 {
 #salat, #italian, #meet, #east {
 	display: none;
 }
-#salat:checked ~ .maslo__card__image_pending {
+#salat:checked ~ section img[class$="maslo__card__image_pending_salat"] {
 	width: 68px;
 	height: 294px;
 	transform: rotate(9.54deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 10px rgba(52, 56, 1, 0.25));
 	transition-duration: .2s;
 }
-#salat:checked ~ .card__ellipse_outerh {
+#salat:checked ~ section div[class$="gradient-green1"]:nth-child(1) {
 	transition-duration: .2s;
 	opacity: 0.2;
 	transform: translateY(-54px);
 }
-#salat:checked ~ .card__ellipse_interior {
+#salat:checked ~ section div[class$="gradient-green1"]:nth-child(2) {
 	transition-duration: .2s;
 	opacity: 1;
 	transform: translateY(-54px);
 }
-#italian:checked ~ .maslo__card__image_pending {
+#italian:checked ~ section img[class$="maslo__card__image_pending_italian"] {
 	width: 85px;
 	height: 295px;
 	transform: rotate(9.49deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 15px rgba(0, 63, 30, 0.15));
 	transition-duration: .2s;
 }
-#italian:checked ~ .card__ellipse_outerh {
+#italian:checked ~ section div[class$="gradient-green2"]:nth-child(1) {
 	transition-duration: .2s;
 	opacity: 0.2;
 	transform: translateY(-54px);
 }
-#italian:checked ~ .card__ellipse_interior {
+#italian:checked ~ section div[class$="gradient-green2"]:nth-child(2) {
 	transition-duration: .2s;
 	opacity: 1;
 	transform: translateY(-54px);
 }
-#meet:checked ~ .maslo__card__image_pending {
+#meet:checked ~ section img[class$="maslo__card__image_pending_meet"] {
 	width: 68px;
 	height: 294px;
 	transform: rotate(10.9deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 15px rgba(87, 0, 0, 0.15));
 	transition-duration: .2s;
 }
-#meet:checked ~ .card__ellipse_outerh {
+#meet:checked ~ section div[class$="gradient-red"]:nth-child(1) {
 	transition-duration: .2s;
 	opacity: 0.2;
 	transform: translateY(-54px);
 }
-#meet:checked ~ .card__ellipse_interior {
+#meet:checked ~ section div[class$="gradient-red"]:nth-child(2) {
 	transition-duration: .2s;
 	opacity: 1;
 	transform: translateY(-54px);
 }
-#east:checked ~ .maslo__card__image_pending {
+#east:checked ~ section img[class$="maslo__card__image_pending_east"] {
 	width: 68px;
 	height: 306px;
 	transform: rotate(9.94deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 15px rgba(111, 57, 0, 0.15));
 	transition-duration: .2s;
 }
-#east:checked ~ .card__ellipse_outerh {
+#east:checked ~ section div[class$="gradient-orange"]:nth-child(1) {
 	transition-duration: .2s;
 	opacity: 0.2;
 	transform: translateY(-54px);
 }
-#east:checked ~ .card__ellipse_interior {
+#east:checked ~ section div[class$="gradient-orange"]:nth-child(2) {
 	transition-duration: .2s;
 	opacity: 1;
 	transform: translateY(-54px);
@@ -318,17 +318,19 @@ h2 {
 	position: relative;
 	width: 90px;
 	height: 24px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
 	font-size: 16px;
 	line-height: 32px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
-.maslo__card__amount::before, .maslo__card__amount::after {
+.maslo__card__amount input {
+	width: 30px;
+}
+.maslo__card__amount button {
 	width: 24px;
 	height: 24px;
+	background: none;
+	opacity: 0.5;
+	border: 1px solid var(--grey);
+	border-radius: 8px;
 }
 .maslo__card__inform {
 	width: 134px;
