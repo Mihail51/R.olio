@@ -61,14 +61,18 @@
 								<input type="radio" name="shopping-cart-product-1" id="shopping-cart-product-1-open">
 								<input type="radio" name="shopping-cart-product-1" id="shopping-cart-product-1-close">
 								<div class="product shopping-cart__product">
+									<div class="fon shopping-cart__product__fon"></div>
 									<div class="wrap shopping-cart__product__wrap">
 										<div class="heading shopping-cart__product__heading">
-											<h5 class="caption shopping-cart__product__caption">Масло для салата</h5>
+											<h5 class="caption shopping-cart__product__caption">Масло "Для салата"</h5>
 											<p class="subtitle shopping-cart__product__subtitle">250мл</p>
 										</div>
 										<div class="content shopping-cart__product__content">
-											<img src="#"> class="image shopping-cart__product__image">
-											<div class="amount shopping-cart__product__amount"></div>
+											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image">
+											<div class="amount shopping-cart__product__amount">
+												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
+												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
 											<div class="price shopping-cart__product__price">
 												<div class="full-price shopping-cart__product__full-price">250</div>
 												<label for="shopping-cart-product-1-close" class="close shopping-cart-product__close"><img src="images/close 1.svg" alt=""></label>

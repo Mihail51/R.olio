@@ -1094,4 +1094,106 @@ h2 {
 	display: flex;
 	align-items: center;
 	text-align: center;
+}
+/* shopping-cart__product */
+.shopping-cart__product {
+	position: relative;
+	width: 1102px;
+	height: 157px;
+	margin: 7px -55px;
+	border-top: 1px solid transparent;
+}
+.shopping-cart__product__fon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #E4EBCE;
+	opacity: 0.25;
+}
+.shopping-cart__product__wrap {
+	width: 990px;
+	height: 106px;
+	margin: 16px auto 32px;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }   
+.shopping-cart__product__heading {
+	width: 100%;
+	height: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.shopping-cart__product__caption {
+	width: 140px;
+	height: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	margin-right: 16px;
+}
+.shopping-cart__product__subtitle {
+	width: 39px;
+	height: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 14px;
+	align-self: center;
+}
+.shopping-cart__product__content {
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.shopping-cart__product__image {
+	width: 168px;
+	height: 90px;
+	background: var(--white);
+	border: 1px solid;
+	border-radius: 4px;
+}
+.shopping-cart__product__price {
+	width: 219px;
+	height: 41px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.shopping-cart__product__full-price {
+	position: relative;
+	width: 163px;
+	height: 41px;
+	padding-right: 50px;
+	margin-right: 32px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 170.23%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+.shopping-cart__product__full-price::after {
+	content: "грн";
+	position: absolute;
+	width: 34px;
+	height: 32px;
+	right: 0;
+/*	top: 0;  */
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.shopping-cart-product__close {
+	width: 24px;
+	height: 24px;
+}
