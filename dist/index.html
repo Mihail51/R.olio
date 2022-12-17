@@ -44,14 +44,242 @@
 							<a href="#contacts">Контакты</a>
 						</li>
 					</ul>
-					<a href="#" class="cart header__cart">
+					<label for="shopping-cart-open" class="cart header__cart">
 						<img src="images/cart.svg" width="40" height="40" alt="Корзина" class="image cart__image">
 						<div class="amount cart__amount">1</div>
-					</a>
+					</label>
 				</nav>
-					</header>
+				<input type="radio" name="shopping-cart" id="shopping-cart-open" class="visually-hidden">
+					<input type="radio" name="shopping-cart" id="shopping-cart-close" class="visually-hidden">
+					<section class="shopping-cart">
+						<div class="wrap shopping-cart__wrap">
+							<div class="header shopping-cart__header">
+								<h3 class="heading shopping-cart__heading text">КОРЗИНА</h3>
+								<label for="shopping-cart-close" class="close shopping-cart__close"><img src="images/close 1.svg" alt=""></label>
+							</div>
+							<div class="products shopping-cart__products">
+								<input type="radio" name="shopping-cart-product-1" id="shopping-cart-product-1-open" class="visually-hidden">
+								<input type="radio" name="shopping-cart-product-1" id="shopping-cart-product-1-close" class="visually-hidden">
+								<div class="product shopping-cart__product shopping-cart-product-1">
+									<div class="fon shopping-cart__product__fon"></div>
+									<div class="wrap shopping-cart__product__wrap">
+										<div class="heading shopping-cart__product__heading">
+											<h5 class="caption shopping-cart__product__caption">Масло "Для салата"</h5>
+											<p class="subtitle shopping-cart__product__subtitle">250мл</p>
+										</div>
+										<div class="content shopping-cart__product__content">
+											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image">
+											<div class="amount offer__amount shopping-cart__product__amount">
+												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
+												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											</div>
+											<div class="price shopping-cart__product__price">
+												<div class="full-price shopping-cart__product__full-price">250</div>
+												<label for="shopping-cart-product-1-close" class="close shopping-cart-product__close"><img src="images/close 1.svg" alt=""></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<input type="radio" name="shopping-cart-product-2" id="shopping-cart-product-2-open" class="visually-hidden">
+								<input type="radio" name="shopping-cart-product-2" id="shopping-cart-product-2-close" class="visually-hidden">
+								<div class="product shopping-cart__product shopping-cart-product-2">
+									<div class="fon shopping-cart__product__fon"></div>
+									<div class="wrap shopping-cart__product__wrap">
+										<div class="heading shopping-cart__product__heading">
+											<h5 class="caption shopping-cart__product__caption">Масло "Для салата"</h5>
+											<p class="subtitle shopping-cart__product__subtitle">250мл</p>
+										</div>
+										<div class="content shopping-cart__product__content">
+											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image">
+											<div class="amount offer__amount shopping-cart__product__amount">
+												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
+												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											</div>
+											<div class="price shopping-cart__product__price">
+												<div class="full-price shopping-cart__product__full-price">250</div>
+												<label for="shopping-cart-product-2-close" class="close shopping-cart-product__close"><img src="images/close 1.svg" alt=""></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<input type="radio" name="shopping-cart-product-3" id="shopping-cart-product-3-open" class="visually-hidden">
+								<input type="radio" name="shopping-cart-product-3" id="shopping-cart-product-3-close" class="visually-hidden">
+								<div class="product shopping-cart__product shopping-cart-product-3">
+									<div class="fon shopping-cart__product__fon"></div>
+									<div class="wrap shopping-cart__product__wrap">
+										<div class="heading shopping-cart__product__heading">
+											<h5 class="caption shopping-cart__product__caption">Масло "Для салата"</h5>
+											<p class="subtitle shopping-cart__product__subtitle">250мл</p>
+										</div>
+										<div class="content shopping-cart__product__content">
+											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image">
+											<div class="amount offer__amount shopping-cart__product__amount">
+												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
+												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											</div>
+											<div class="price shopping-cart__product__price">
+												<div class="full-price shopping-cart__product__full-price">250</div>
+												<label for="shopping-cart-product-3-close" class="close shopping-cart-product__close"><img src="images/close 1.svg" alt=""></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<input type="radio" name="shopping-cart-product-4" id="shopping-cart-product-4-open" class="visually-hidden">
+								<input type="radio" name="shopping-cart-product-4" id="shopping-cart-product-4-close" class="visually-hidden">
+								<div class="product shopping-cart__product shopping-cart-product-4">
+									<div class="fon shopping-cart__product__fon"></div>
+									<div class="wrap shopping-cart__product__wrap">
+										<div class="heading shopping-cart__product__heading">
+											<h5 class="caption shopping-cart__product__caption">Масло "Для салата"</h5>
+											<p class="subtitle shopping-cart__product__subtitle">250мл</p>
+										</div>
+										<div class="content shopping-cart__product__content">
+											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image">
+											<div class="amount offer__amount shopping-cart__product__amount">
+												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
+												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											</div>
+											<div class="price shopping-cart__product__price">
+												<div class="full-price shopping-cart__product__full-price">250</div>
+												<label for="shopping-cart-product-4-close" class="close shopping-cart-product__close"><img src="images/close 1.svg" alt=""></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form shopping-cart__form">
+								<form action="#" method="post" id="shopping-cart__form">
+									<fieldset class="customer-data" form="shopping-cart__form">
+										<label for="customer-name" class="customer-name text">Имя получателя</label>
+										<input type="text" name="name" id="customer-name" class="grey-6" placeholder="Фамилия Имя Отчество">
+										<label for="customer-tel" class="customer-tel text">Контактный номер телефона</label>
+										<input type="tel" name="tel" id="customer-tel" class="grey-6" placeholder="+380">
+									</fieldset>
+									<fieldset class="payment-method" form="shopping-cart__form">
+										<legend>Способ оплаты</legend>
+										<div class="way credit-card">
+											<input type="radio" name="payment-method" id="credit-card">
+											<label for="credit-card">- на карту</label>
+											<fieldset class="credit-card__form" form="shopping-cart__form">
+												<div class="wrap credit-card__wrap">
+													<div class="header credit-card__header">
+														<h4 class="heading credit-card__heading">Детали кредитной карты</h4>
+													</div>
+													<div class="content credit-card__content">
+														<input type="text" name="card-number" id="card-number" placeholder="Номер карты">  
+														<div class="dates credit-card__dates">
+															<div class="month credit-card__month">
+																<select name="Month"> 
+																	<option value="Month">Месяц</option>
+																	<option value="january">Январь</option>
+																	<option value="february">Февраль</option>
+																	<option value="march">Март</option>
+																	<option value="april">Апрель</option>
+																	<option value="may">Май</option>
+																	<option value="june">Июнь</option>
+																	<option value="july">Июль</option>
+																	<option value="august">Август</option>
+																	<option value="september">Сентябрь</option>
+																	<option value="october">Октябрь</option>
+																	<option value="november">Ноябрь</option>
+																	<option value="december">Декабрь</option>
+																</select>
+															</div>
+															<div class="year credit-card__year">
+																<select name="Year">
+																	<option value="Year">Год</option>
+																	<option value="2022">2022</option>
+																	<option value="2023">2023</option>
+																	<option value="2024">2024</option>
+																	<option value="2025">2025</option>
+																	<option value="2026">2026</option>
+																	<option value="2027">2027</option>
+																	<option value="2028">2028</option>
+																	<option value="2029">2029</option>
+																	<option value="2030">2030</option>
+																	<option value="2031">2031</option>
+																	<option value="2032">2032</option>
+																	<option value="2033">2033</option>
+																</select>
+															</div>
+														</div>
+														<div class="verification credit-card__verification">
+															<div class="cvv__input">
+																<input type="text" name="cvv" placeholder="CVV">
+															</div>
+															<div class="cvv__detalis">
+																<p>3 или 4 цифры, расположенные</br> на обратной стороне карты</p>
+															</div>
+														</div>
+														<button type="submit" class="btn proceed__btn"><a href="#">Продолжить</a></button>
+														<button type="submit" class="btn paypal__btn"><a href="#">Платить с помощью</a></button>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="way upon-receipt">
+											<input type="radio" name="payment-method" id="upon-receipt">
+											<label for="upon-receipt">- при получении</label>
+											<fildset class="upon-receipt__form" form="shopping-cart__form">
+												<div class="cash">
+													<input type="radio" name="receipt" id="cash"></input>
+													<label for="cash"> Наличными</label>
+												</div>
+												<div class="imposed">
+													<input type="radio" name="receipt" id="imposed"></input>
+													<label for="imposed"> Наложенным платежом</label>
+												</div>
+											</fildset>
+										</div>
+									</fieldset>
+									<fieldset class="delivery-method" form="shopping-cart__form">
+										<legend>Способы доставки</legend>
+										<div class="way new-mail">
+											<input type="radio" name="delivery-method" id="new-mail">
+											<label for="new-mail">Новая почта:</label>
+											<div class="form new-mail__form">
+												<h3 class="heading new-mail__heading text">Новая почта:</h3>
+												<input type="text" name="city" class="grey-6" id="city" placeholder="Город">
+												<input type="text" name="post" class="grey-6" id="post" placeholder="Отделение №">
+											</div>
+										</div>
+										<div class="way ukrposhta">
+											<input type="radio" name="delivery-method" id="ukrposhta">
+											<label for="ukrposhta">Укрпочта</label>
+											<div class="form ukrposhta__form">
+												<h3 class="heading ukrposhta__heading text">Укрпочта</h3>
+												<input type="text" name="index" class="grey-6" id="index" placeholder="49000">
+												<input type="text" name="city-1" class="grey-6" id="city-1" placeholder="Город">
+												<input type="text" name="street" class="grey-6" id="street" placeholder="Улица">
+												<input type="text" name="house" class="grey-6" id="house" placeholder="Дом">
+												<input type="text" name="additionally" class="grey-6" id="additionally" placeholder="Дополнительно (подъезд, квартира и т.п.)">
+											</div>
+										</div>
+										<div class="way pickup">
+											<input type="radio" name="delivery-method" id="pickup">
+											<label for="pickup">Самовывоз</label>
+											<div class="form pickup__form"></div>
+										</div>
+									</fieldset>
+									<fieldset class="shopping-cart__form__footer" form="shopping-cart__form">
+										<textarea name="massage" id="message" cols="30" rows="10" placeholder="Ваш комментарий к заказу"></textarea>
+										<div class="buttons shopping-cart__form__buttons">
+											<input type="submit" value="ОТПРАВИТЬ ЗАКАЗ" class="salat">
+											<input type="reset" value="СБРОСИТЬ" class="salat">
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<div class="footer shopping-cart__footer"></div>
+						</div>
+					</section>
 			</div>
 		</div>
+	</header>
 	<mane class="main">
 		<section class="offer main__offer">
 			<div class="conteiner offer__conteiner">
@@ -83,7 +311,7 @@
 										</div>
 										<div class="buttons offer__buttons">
 											<label for="salat" class="button offer__button salat bg-but-salat">ПОДРОБНЕЕ</label>
-											<button class="button offer__button salat bg-but-salat">В КОРЗИНУ</button>
+											<label for="shopping-cart-product-1-open" class="button offer__button salat bg-but-salat">В КОРЗИНУ</label for="shopping-cart-product-1-open">
 										</div>
 									</figcaption>
 								</figure>
@@ -113,7 +341,7 @@
 										</div>
 										<div class="buttons offer__buttons">
 											<label for="italian" class="button offer__button italian bg-but-italian">ПОДРОБНЕЕ</label>
-											<button class="button offer__button italian bg-but-italian">В КОРЗИНУ</button>
+											<label for="shopping-cart-product-2-open" class="button offer__button italian bg-but-italian">В КОРЗИНУ</label for="shopping-cart-product-2-open">
 										</div>
 									</figcaption>
 								</figure>
@@ -143,7 +371,7 @@
 										</div>
 										<div class="buttons offer__buttons">
 											<label for="meet" class="button offer__button meet bg-but-meet">ПОДРОБНЕЕ</label>
-											<button class="button offer__button meet bg-but-meet">В КОРЗИНУ</button>
+											<label for="shopping-cart-product-3-open" class="button offer__button meet bg-but-meet">В КОРЗИНУ</label>
 										</div>
 									</figcaption>
 								</figure>
@@ -173,7 +401,7 @@
 										</div>
 										<div class="buttons offer__buttons">
 											<label for="east" class="button offer__button east bg-but-east">ПОДРОБНЕЕ</label>
-											<button class="button offer__button east bg-but-east">В КОРЗИНУ</button>
+											<label for="shopping-cart-product-4-open" class="button offer__button east bg-but-east">В КОРЗИНУ</label>
 										</div>
 									</figcaption>
 								</figure>
@@ -222,7 +450,7 @@
 											</div>
 										</div>
 										<div class="buttons maslo__card__buttons">
-											<button class="button maslo__card__button salat bg-but-salat">В КОРЗИНУ</button>
+											<label for="shopping-cart-product-1-open" class="button maslo__card__button salat bg-but-salat">В КОРЗИНУ</label>
 											<button class="button maslo__card__button salat bg-but-salat">ЗАКАЗАТЬ В ТГ</button>
 										</div>
 									</div>
@@ -255,7 +483,7 @@
 											</div>
 										</div>
 										<div class="buttons maslo__card__buttons">
-											<button class="button maslo__card__button italian bg-but-italian">В КОРЗИНУ</button>
+											<label for="shopping-cart-product-2-open" class="button maslo__card__button italian bg-but-italian">В КОРЗИНУ</label>
 											<button class="button maslo__card__button italian bg-but-italian">ЗАКАЗАТЬ В ТГ</button>
 										</div>
 									</div>
@@ -288,7 +516,7 @@
 											</div>
 										</div>
 										<div class="buttons maslo__card__buttons">
-											<button class="button maslo__card__button meet bg-but-meet">В КОРЗИНУ</button>
+											<label for="shopping-cart-product-3-open" class="button maslo__card__button meet bg-but-meet">В КОРЗИНУ</label>
 											<button class="button maslo__card__button meet bg-but-meet">ЗАКАЗАТЬ В ТГ</button>
 										</div>
 									</div>
@@ -321,7 +549,7 @@
 											</div>
 										</div>
 										<div class="buttons maslo__card__buttons">
-											<button class="button maslo__card__button east bg-but-east">В КОРЗИНУ</button>
+											<label for="shopping-cart-product-4-open" class="button maslo__card__button east bg-but-east">В КОРЗИНУ</label>
 											<button class="button maslo__card__button east bg-but-east">ЗАКАЗАТЬ В ТГ</button>
 										</div>
 									</div>
