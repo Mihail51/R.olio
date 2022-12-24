@@ -1249,11 +1249,7 @@ h2 {
 	min-height: 552px;
 	padding: 56px;
 	margin: 10px auto;
-/*	background-image: url(../images/m_feedback.png); */
 	background-color: var(--white);
-/*	background-repeat: no-repeat;
-	background-position: 34px 435px;
-	background-size: 150px 109px; */ 
 	flex-direction: column;
 }
 .feedback__image {
@@ -1286,7 +1282,9 @@ h2 {
 	text-transform: uppercase;
 	margin: 0;
 }
-.feedback__header__content img {
+.feedback__close img, 
+.successfully__close img, 
+.mistake__close img {
 	width: 32px;
 	height: 32px;
 	margin: 24px auto;
