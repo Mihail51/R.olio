@@ -700,13 +700,27 @@
 					<input type="radio" name="feedback" id="feedback=close" class="visually-hidden">
 					<div class="feedback">
 						<div class="wrap feedback__wrap">
+							<img src="images/m_feedback.png" alt="" class="feedback__image">
 							<div class="header feedback__header">
 								<div class="content feedback__header__content">
 									<h3 class="heading feedback__heading text">Написать нам</h3>
 									<label for="feedback=close" class="close feedback__close"><img src="images/close 1.svg" alt=""></label>
 								</div>
 							</div>
-							<form action=""></form>
+							<form id="feedbackForm" action="">
+								<div class="form-grope">
+									<label for="feedback-name" class="control-label text">Имя</label>
+									<input id="feedback-name" type="text" class="form-control grey-6 plate" placeholder="Фамилия Имя Отчество">
+								</div>
+								<div class="form-grope">
+									<label for="feedback-phone" class="control-label text">Контактный номер телефона</label>
+									<input id="feedback-phone" type="tel" class="form-control grey-6 plate" placeholder="+380">
+								</div>
+								<textarea name="" id="feedback-message" cols="30" rows="10" class="form-control grey-6 plate" placeholder="Текст комментария"></textarea>
+								<div class="footer feedback__footer">
+									<button type="submit" class="btn feedback-btn salat">ОТПРАВИТЬ</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
