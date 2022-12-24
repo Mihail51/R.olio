@@ -710,19 +710,19 @@
 							<form id="feedbackForm" action="">
 								<div class="form-grope">
 									<label for="feedback-name" class="control-label text">Имя</label>
-									<input id="feedback-name" type="text" class="form-control grey-6 plate" placeholder="Фамилия Имя Отчество">
+									<input id="feedback-name" type="text" class="form-control grey-6 plate" placeholder="Фамилия Имя Отчество" required>
 								</div>
 								<div class="form-grope">
 									<label for="feedback-phone" class="control-label text">Контактный номер телефона</label>
-									<input id="feedback-phone" type="tel" class="form-control grey-6 plate" placeholder="+380">
+									<input id="feedback-phone" type="tel" class="form-control grey-6 plate" placeholder="+380" required>
 								</div>
-								<textarea name="" id="feedback-message" cols="30" rows="10" class="form-control grey-6 plate" placeholder="Текст комментария"></textarea>
+								<textarea name="" id="feedback-message" cols="30" rows="10" class="form-control grey-6 plate" placeholder="Текст комментария" required></textarea>
 								<div class="footer feedback__footer">
-									<button type="submit" class="btn feedback-btn salat">ОТПРАВИТЬ</button>
+									<input type="submit" class="btn feedback-btn salat" value="ОТПРАВИТЬ">
 								</div>
 							</form>
 						</div>
-					</div>
+					</div> 
 				</div>
 			</div>
 		</section>
