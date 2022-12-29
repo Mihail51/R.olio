@@ -24,7 +24,6 @@
 	--txt-east: #F1A757;
 	--txt-east-active: #BD690D;
 	--bg-footer: #728536;
-	--plate: #D6D6D6;
 }
 .white {
 	color: var(--white);
@@ -97,7 +96,4 @@
 }
 .grey-6 {
 	color: var(--grey-6);
-}
-.plate {
-	border-color: var(--plate);
 }
