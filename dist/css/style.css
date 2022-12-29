@@ -796,7 +796,7 @@ h2 {
 .shopping-cart__close img {
 	width: 32px;
 	height: 32px;
-	margin: 24px auto;
+	margin: 0 auto;
 }
 .shopping-cart__form {
 	width: 100%;
@@ -1271,7 +1271,7 @@ h2 {
 	height: 96px;
 	padding-bottom: 16px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-end;
 }
 .feedback__header__content {
