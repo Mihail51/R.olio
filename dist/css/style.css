@@ -750,7 +750,7 @@ h2 {
 }
 
 /* SHOPPING-CART */
-.shopping-cart {
+.shopping-cart, .feedback {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -772,7 +772,6 @@ h2 {
 }
 .shopping-cart__wrap {
 	width: 1102px;
-/*	min-height: 1186px;  */
 	height: auto;
 	padding: 56px;
 	margin: 10px auto;
@@ -1221,7 +1220,10 @@ h2 {
 #shopping-cart-product-4-open:checked ~ .shopping-cart-product-4 {
 	display: block;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 4b063ed7385f48a4365e3b3decbc4c96bd2a5c49
 }
 
 /* FEEDBACK */
@@ -1404,5 +1406,8 @@ h2 {
 }
 #successfully-open {
 	z-index: 1000;
+<<<<<<< HEAD
 >>>>>>> parent of f8f64af (Update style.css)
+=======
+>>>>>>> 4b063ed7385f48a4365e3b3decbc4c96bd2a5c49
 }
