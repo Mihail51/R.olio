@@ -1,5 +1,5 @@
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: smooth;  /* Плавное перемещение по якорям */
 }
 body {
 	position: relative;
@@ -215,6 +215,7 @@ h2 {
 .maslo__card__image_pending {
 	width: 53px;
 	height: 229px;
+	transform: rotate(-6.54deg);
 }
 #salat, #italian, #meet, #east {
 	display: none;
@@ -222,7 +223,7 @@ h2 {
 #salat:checked ~ section img[class$="maslo__card__image_pending_salat"] {
 	width: 68px;
 	height: 294px;
-	transform: rotate(9.54deg) translateY(-54px);
+	transform: rotate(0deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 10px rgba(52, 56, 1, 0.25));
 	transition-duration: .2s;
 }
@@ -239,7 +240,7 @@ h2 {
 #italian:checked ~ section img[class$="maslo__card__image_pending_italian"] {
 	width: 85px;
 	height: 295px;
-	transform: rotate(9.49deg) translateY(-54px);
+	transform: rotate(0deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 15px rgba(0, 63, 30, 0.15));
 	transition-duration: .2s;
 }
@@ -256,7 +257,7 @@ h2 {
 #meet:checked ~ section img[class$="maslo__card__image_pending_meet"] {
 	width: 68px;
 	height: 294px;
-	transform: rotate(10.9deg) translateY(-54px);
+	transform: rotate(0deg) translateY(-54px);
 	filter: drop-shadow(4px 10px 15px rgba(87, 0, 0, 0.15));
 	transition-duration: .2s;
 }
@@ -273,7 +274,7 @@ h2 {
 #east:checked ~ section img[class$="maslo__card__image_pending_east"] {
 	width: 68px;
 	height: 306px;
-	transform: rotate(9.94deg) translateY(-54px);
+	transform: rotate(0deg) translateY(-65px);
 	filter: drop-shadow(4px 10px 15px rgba(111, 57, 0, 0.15));
 	transition-duration: .2s;
 }

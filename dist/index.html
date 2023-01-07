@@ -291,7 +291,20 @@
 									<div class="image offer__image">
 										<div class="ellipse offer__ellipse offer__ellipse_outer gradient-green1"></div>
 										<div class="ellipse offer__ellipse offer__ellipse_interior gradient-green1"></div>
-										<img src="images/additional-1.png" alt="" class="image offer__image offer__image_additional">
+										<!-- 1x: 288px; 2x: 575px; -->
+										<!-- laptop 1x: 235px; 2x: 470px; -->
+										<!-- tablet 1x: 217px; 2x: 433px; -->
+										<!-- mobile 1x: 160px; 2x: 320px; -->
+										<picture class="image offer__image offer__image_additional">
+											<sours media="(max-width: 320px)" type="image/png" srcset="images/additional_mobile-1.png 1x, images/additional_mobile-1@2.png 2x"></sours>
+											<sours media="(max-width: 320px)" type="image/webp" srcset="images/additional_mobile-1.webp 1x, images/additional_mobile-1@2.webp 2x"></sours>
+											<sours media="(max-width: 768px)" type="image/png" srcset="images/additional_tablet-1.png 1x, images/additional_tablet-1@2.png 2x"></sours>
+											<sours media="(max-width: 768px)" type="image/webp" srcset="images/additional_tablet-1.webp 1x, images/additional_tablet-1@2.webp 2x"></sours>
+											<sours media="(max-width: 1366px)" type="image/png" srcset="images/additional_laptop-1.png 1x, images/additional_laptop-1@2.png 2x"></sours>
+											<sours media="(max-width: 1366px)" type="image/webp" srcset="images/additional_laptop-1.webp 1x, images/additional_laptop-1@2.webp 2x"></sours>
+											<sours type="image/webp" srcset="images/additional-1.webp 1x, images/additional-1@2.webp 2x"></sours>
+											<img src="images/additional-1.png" srcset="images/additional-1@2.png 2x" alt="" class="">
+										</picture>
 										<img src="images/dlia_salata.png" alt="" class="image offer__image offer__image_wine">
 									</div>
 									<figcaption class="content offer__content">
@@ -310,7 +323,7 @@
 											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
 										</div>
 										<div class="buttons offer__buttons">
-											<label for="salat" class="button offer__button salat bg-but-salat">ПОДРОБНЕЕ</label>
+											<label for="salat" id="offer-button" class="button offer__button offer__button_more salat bg-but-salat">ПОДРОБНЕЕ</label>
 											<label for="shopping-cart-product-1-open" class="button offer__button salat bg-but-salat">В КОРЗИНУ</label for="shopping-cart-product-1-open">
 										</div>
 									</figcaption>
@@ -340,7 +353,7 @@
 											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
 										</div>
 										<div class="buttons offer__buttons">
-											<label for="italian" class="button offer__button italian bg-but-italian">ПОДРОБНЕЕ</label>
+											<label for="italian" class="button offer__button offer__button_more italian bg-but-italian">ПОДРОБНЕЕ</label>
 											<label for="shopping-cart-product-2-open" class="button offer__button italian bg-but-italian">В КОРЗИНУ</label for="shopping-cart-product-2-open">
 										</div>
 									</figcaption>
@@ -370,7 +383,7 @@
 											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
 										</div>
 										<div class="buttons offer__buttons">
-											<label for="meet" class="button offer__button meet bg-but-meet">ПОДРОБНЕЕ</label>
+											<label for="meet" class="button offer__button offer__button_more meet bg-but-meet">ПОДРОБНЕЕ</label>
 											<label for="shopping-cart-product-3-open" class="button offer__button meet bg-but-meet">В КОРЗИНУ</label>
 										</div>
 									</figcaption>
@@ -400,7 +413,7 @@
 											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
 										</div>
 										<div class="buttons offer__buttons">
-											<label for="east" class="button offer__button east bg-but-east">ПОДРОБНЕЕ</label>
+											<label for="east" class="button offer__button offer__button_more east bg-but-east">ПОДРОБНЕЕ</label>
 											<label for="shopping-cart-product-4-open" class="button offer__button east bg-but-east">В КОРЗИНУ</label>
 										</div>
 									</figcaption>
@@ -428,7 +441,7 @@
 								<div class="image maslo__card__image">
 									<div class="ellipse card__ellipse card__ellipse_outerh gradient-green1"></div>
 									<div class="ellipse card__ellipse card__ellipse_interior gradient-green1"></div>
-									<img class="image maslo__card__image_pending maslo__card__image_pending_salat" width="41.53" height="179.54" src="images/dlia_salata_card.png" alt="">
+									<img class="image maslo__card__image_pending maslo__card__image_pending_salat" width="41.53" height="179.54" src="images/dlia_salata.png" alt="">
 								</div>
 								<figcaption>
 									<h3 class="caption maslo__card__caption salat">Масло “Для салата”</h3>
@@ -444,7 +457,6 @@
 												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
 											</div>
 											<div class="inform maslo__card__inform">
-			
 												<div class="volume maslo__card__volume text">250 мл</div>
 												<div class="price maslo__card__price salat">115</div>
 											</div>
@@ -462,7 +474,7 @@
 								<div class="image maslo__card__image">
 									<div class="ellipse card__ellipse card__ellipse_outerh gradient-green2"></div>
 									<div class="ellipse card__ellipse card__ellipse_interior gradient-green2"></div>
-									<img class="image maslo__card__image_pending maslo__card__image_pending_italian" width="41.53" height="179.54" src="images/italianskoe_card.png" alt="">
+									<img class="image maslo__card__image_pending maslo__card__image_pending_italian" width="41.53" height="179.54" src="images/italianskoe.png" alt="">
 								</div>
 								<figcaption>
 									<h3 class="caption maslo__card__caption italian">Масло “Итальянское”</h3>
@@ -495,7 +507,7 @@
 								<div class="image maslo__card__image">
 									<div class="ellipse card__ellipse card__ellipse_outerh gradient-red"></div>
 									<div class="ellipse card__ellipse card__ellipse_interior gradient-red"></div>
-									<img class="image maslo__card__image_pending maslo__card__image_pending_meet" width="41.53" height="179.54" src="images/dlia_myasa_card.png" alt="">
+									<img class="image maslo__card__image_pending maslo__card__image_pending_meet" width="41.53" height="179.54" src="images/dlia_myasa.png" alt="">
 								</div>
 								<figcaption>
 									<h3 class="caption maslo__card__caption meet">Масло “Для мяса”</h3>
@@ -528,7 +540,7 @@
 								<div class="image maslo__card__image">
 									<div class="ellipse card__ellipse card__ellipse_outerh gradient-orange"></div>
 									<div class="ellipse card__ellipse card__ellipse_interior gradient-orange"></div>
-									<img class="image maslo__card__image_pending maslo__card__image_pending_east" width="41.53" height="179.54" src="images/vostochnoe_card.png" alt="">
+									<img class="image maslo__card__image_pending maslo__card__image_pending_east" width="41.53" height="179.54" src="images/vostochnoe.png" alt="">
 								</div>
 								<figcaption>
 									<h3 class="caption maslo__card__caption east">Масло “Восточное”</h3>
@@ -807,48 +819,8 @@
 	
 
 		<!-- Swiper JS -->
-		 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-		 
-		 <!-- Initialize Swiper -->
-		 <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <script>
-      var swiper = new Swiper(".mySwiperReviews", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+	 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	 <script type="text/javascript" src="js/offer-button.js"></script>  
 
- <!--   <script>
-    	const offerButtonMaslo = document.getElementsByClassName('offer-button-maslo')
-		const modalMaslo = document.getElementById('maslo')
-		offerButtonMaslo.addEventListener('click', function(event) {
-		  modalMaslo.focus()
-		})
-    </script>
-	
 </body>
 </html>
