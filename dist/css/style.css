@@ -1054,6 +1054,7 @@ h2 {
 	width: 100%;
 	height: 0;
 	opacity: 0;
+	border: none;
 }  
 .cash, .imposed {
 	position: relative;
@@ -1220,11 +1221,6 @@ h2 {
 }
 #shopping-cart-product-4-open:checked ~ .shopping-cart-product-4 {
 	display: block;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 4b063ed7385f48a4365e3b3decbc4c96bd2a5c49
 }
 
 /* FEEDBACK */
