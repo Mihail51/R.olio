@@ -166,6 +166,7 @@ h2 {
 /* OFFER */
 .offer__wrap {
 	height: 694px;
+	margin-top: -60px;
 }
 
 /* MASLO */
@@ -203,19 +204,6 @@ h2 {
 	justify-content: center;
 	align-items: center;
 }
-/* 
-.card__ellipse_outerh {
-	width: 284px;
-	height: 284px;
-	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
-	opacity: 0;
-}
-.card__ellipse_interior {
-	width: 252px;
-	height: 252px;
-	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
-	opacity: 0;
-} */
 .maslo__card__image {
 	width: 244px;
 	height: 244px;
@@ -244,94 +232,41 @@ h2 {
 .maslo__card_4_active .maslo__card__image {
 	background-image: url(../images/ellipse-4-02.svg), url(../images/ellipse-4.svg);
 }
-.maslo__card_active .maslo__card__image__pending {
-	transform: rotate(0deg) translateY(-54px);
-}
-.maslo__card_1_active .maslo__card__image__pending {
+.maslo__card_1_active .maslo__card__image img {
 	width: 68px;
 	height: 294px;
+	transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
 }
-.maslo__card_2_active .maslo__card__image__pending {
+.maslo__card_2_active .maslo__card__image img {
 	width: 85px;
 	height: 295px;
+	transform: rotate(9deg);
+	-webkit-transform: rotate(9deg);
+	-moz-transform: rotate(9deg);
+	-ms-transform: rotate(9deg);
+	-o-transform: rotate(9deg);
 }
-.maslo__card_3_active .maslo__card__image__pending {
-	width: 64.45px;
-	height: 307.51px;
+.maslo__card_3_active .maslo__card__image img {
+	width: 64px;
+	height: 307px;
+	transform: rotate(11deg);
+	-webkit-transform: rotate(11deg);
+	-moz-transform: rotate(11deg);
+	-ms-transform: rotate(11deg);
+	-o-transform: rotate(11deg);
 }
-.maslo__card_4_active .maslo__card__image__pending {
+.maslo__card_4_active .maslo__card__image img {
 	width: 68px;
 	height: 306px;
-}
-
-
-#salat:checked ~ section img[class$="maslo__card__image_pending_salat"] {
-	width: 68px;
-	height: 294px;
-	transform: rotate(0deg) translateY(-54px);
-	filter: drop-shadow(4px 10px 10px rgba(52, 56, 1, 0.25));
-	transition-duration: .2s;
-}
-#salat:checked ~ section div[class$="gradient-green1"]:nth-child(1) {
-	transition-duration: .2s;
-	opacity: 0.2;
-	transform: translateY(-54px);
-}
-#salat:checked ~ section div[class$="gradient-green1"]:nth-child(2) {
-	transition-duration: .2s;
-	opacity: 1;
-	transform: translateY(-54px);
-}
-#italian:checked ~ section img[class$="maslo__card__image_pending_italian"] {
-	width: 85px;
-	height: 295px;
-	transform: rotate(0deg) translateY(-54px);
-	filter: drop-shadow(4px 10px 15px rgba(0, 63, 30, 0.15));
-	transition-duration: .2s;
-}
-#italian:checked ~ section div[class$="gradient-green2"]:nth-child(1) {
-	transition-duration: .2s;
-	opacity: 0.2;
-	transform: translateY(-54px);
-}
-#italian:checked ~ section div[class$="gradient-green2"]:nth-child(2) {
-	transition-duration: .2s;
-	opacity: 1;
-	transform: translateY(-54px);
-}
-#meet:checked ~ section img[class$="maslo__card__image_pending_meet"] {
-	width: 68px;
-	height: 294px;
-	transform: rotate(0deg) translateY(-54px);
-	filter: drop-shadow(4px 10px 15px rgba(87, 0, 0, 0.15));
-	transition-duration: .2s;
-}
-#meet:checked ~ section div[class$="gradient-red"]:nth-child(1) {
-	transition-duration: .2s;
-	opacity: 0.2;
-	transform: translateY(-54px);
-}
-#meet:checked ~ section div[class$="gradient-red"]:nth-child(2) {
-	transition-duration: .2s;
-	opacity: 1;
-	transform: translateY(-54px);
-}
-#east:checked ~ section img[class$="maslo__card__image_pending_east"] {
-	width: 68px;
-	height: 306px;
-	transform: rotate(0deg) translateY(-65px);
-	filter: drop-shadow(4px 10px 15px rgba(111, 57, 0, 0.15));
-	transition-duration: .2s;
-}
-#east:checked ~ section div[class$="gradient-orange"]:nth-child(1) {
-	transition-duration: .2s;
-	opacity: 0.2;
-	transform: translateY(-54px);
-}
-#east:checked ~ section div[class$="gradient-orange"]:nth-child(2) {
-	transition-duration: .2s;
-	opacity: 1;
-	transform: translateY(-54px);
+	transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
 }
 .maslo__card figure figcaption {
 	width: 100%;

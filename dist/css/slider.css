@@ -1,7 +1,7 @@
 
-.mySwiper .swiper {
+/* .mySwiper .swiper {
 	margin-top: -60px;
-}
+} */
 .mySwiper .swiper-button-next, .mySwiper .swiper-button-prev {
 	top: 65%!important;
 }
@@ -29,47 +29,59 @@
 	position: relative;
 	width: 557px;
 	height: 100%;
+	margin-left: 20px;
 	background-repeat: no-repeat;
-	background-position: bottom right, center calc(100% - 29.5px), center calc(100% - 67.5px);
-	
+	background-size: 557px, 481px;
+	background-position: center calc(100% - 30px), center calc(100% - 67.5px);;
 }
- .swiper-slide:nth-child(1) .offer__image {
-	background-image: image-set("../images/additional-1.webp" 1x, "../images/additional-1@2.webp" 2x), url(../images/ellipse-1-02.svg), url(../images/ellipse-1.svg);
-	background-size: 267px 259px, 557px 557px, 481px 481px;
-} 
+.swiper-slide:nth-child(1) .offer__image {
+	background-image: url(../images/ellipse-1-02.svg), url(../images/ellipse-1.svg);
+}
 .swiper-slide:nth-child(2) .offer__image {
-	background-image: image-set("../images/additional-2.webp" 1x, "../images/additional-2@2.webp" 2x), url(../images/ellipse-2-02.svg), url(../images/ellipse-2.svg);
-	background-size: 373px 336px, 557px 557px, 481px 481px;
-} 
+	background-image: url(../images/ellipse-2-02.svg), url(../images/ellipse-2.svg);
+}
 .swiper-slide:nth-child(3) .offer__image {
-	background-image: image-set("../images/additional-3.webp" 1x, "../images/additional-3@2.webp" 2x), url(../images/ellipse-3-02.svg), url(../images/ellipse-3.svg);
-	background-size: 348px 355px, 557px 557px, 481px 481px;
-} 
+	background-image: url(../images/ellipse-3-02.svg), url(../images/ellipse-3.svg);
+}
 .swiper-slide:nth-child(4) .offer__image {
-	background-image: image-set("../images/additional-4.webp" 1x, "../images/additional-4@2.webp" 2x), url(../images/ellipse-4-02.svg), url(../images/ellipse-4.svg);
-	background-size: 342px 372px, 557px 557px, 481px 481px;
-} 
-.offer__ellipse {
-	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+	background-image: url(../images/ellipse-4-02.svg), url(../images/ellipse-4.svg);
 }
-.offer__image_additional {
+.offer__image::before {
+	content: "";
 	position: absolute;
-	width: 267px;
-	height: 259px;
-	bottom: 0;
+	width: 288px;
+	height: 279px;
 	right: 0;
+	bottom: -20px;
 }
+.swiper-slide:nth-child(1) .offer__image::before {
+	background-image: image-set("../images/additional-1.webp" 1x, "../images/additional-1@2.webp" 2x);
+	background-size: cover;
+} 
+.swiper-slide:nth-child(2) .offer__image::before {
+	background-image: image-set("../images/additional-2.webp" 1x, "../images/additional-2@2.webp" 2x);
+	background-size: cover;
+} 
+.swiper-slide:nth-child(3) .offer__image::before {
+	background-image: image-set("../images/additional-3.webp" 1x, "../images/additional-3@2.webp" 2x);
+	background-size: cover;
+} 
+.swiper-slide:nth-child(4) .offer__image::before {
+	background-image: image-set("../images/additional-4.webp" 1x, "../images/additional-4@2.webp" 2x);
+	background-size: cover;
+} 
 .offer__image_wine {
 	position: absolute;
-	width: 257.67px;
-	height: 663.98px;
-	bottom: 30.92px;
-	left: 50%;
+	/* width: 257.67px;
+	height: 663.98px; */
+	bottom: 22px;
+	left: 51%;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
+	z-index: 1;
 }
 .offer__content {
 	position: relative;
