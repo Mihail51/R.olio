@@ -44,3 +44,18 @@
 		       });	
 		   });
 	};
+
+//Добавление стиля active при нажатии кнопки "Подробнее"	
+	const buttons = document.querySelectorAll('.offer__button_more');
+	const cards = document.querySelectorAll('.maslo__card_1, .maslo__card_2, .maslo__card_3, .maslo__card_4');
+
+	buttons.forEach((button, index) => {
+	button.addEventListener('click', () => {
+		for (let i = 0; i < cards.length; i++) {
+		cards[i].classList.remove(`maslo__card_${i + 1}_active`);
+		cards.forEach(card => card.classList.remove('maslo__card_active'));
+		}
+		cards[index].classList.add(`maslo__card_${index + 1}_active`);
+		cards[index].classList.add('maslo__card_active');
+	});
+	});

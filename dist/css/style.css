@@ -92,8 +92,16 @@ h2 {
 	align-items: center;
 }
 .header__logo {
-	width: 232px;
-	height: 187px;
+	width: 316px;
+	height: 316px;
+	margin-top: -50px;
+	margin-left: -40px;
+	background: #7DA00C;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -101,6 +109,7 @@ h2 {
 .header__logo__image {
 	width: 76px;
 	height: 155px;
+	margin-bottom: -50px;
 }
 .header__menu {
 	width: 742px;
@@ -152,13 +161,7 @@ h2 {
 	line-height: 19px;
 	color: #fff;
 }
-.header__ellipse {
-	width: 316px;
-	height: 316px;
-	bottom: 0;
-	background: #7DA00C;
-	left: -40px;
-}
+
 
 /* OFFER */
 .offer__wrap {
@@ -200,6 +203,7 @@ h2 {
 	justify-content: center;
 	align-items: center;
 }
+/* 
 .card__ellipse_outerh {
 	width: 284px;
 	height: 284px;
@@ -211,15 +215,56 @@ h2 {
 	height: 252px;
 	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
 	opacity: 0;
+} */
+.maslo__card__image {
+	width: 244px;
+	height: 244px;
+} 
+.maslo__card__image img {
+	width: auto;
+	height: auto;
+	/* transform: rotate(-6.54deg); */
+} 
+.maslo__card_active .maslo__card__image {
+	width: 284px;
+	height: 284px;
+	background-repeat: no-repeat;
+	background-size: 284px 284px, 252px 252px;
+	background-position: center, center;
 }
-.maslo__card__image_pending {
-	width: 53px;
-	height: 229px;
-	transform: rotate(-6.54deg);
+.maslo__card_1_active .maslo__card__image {
+	background-image: url(../images/ellipse-1-02.svg), url(../images/ellipse-1.svg);
 }
-#salat, #italian, #meet, #east {
-	display: none;
+.maslo__card_2_active .maslo__card__image {
+	background-image: url(../images/ellipse-2-02.svg), url(../images/ellipse-2.svg);
 }
+.maslo__card_3_active .maslo__card__image {
+	background-image: url(../images/ellipse-3-02.svg), url(../images/ellipse-3.svg);
+}
+.maslo__card_4_active .maslo__card__image {
+	background-image: url(../images/ellipse-4-02.svg), url(../images/ellipse-4.svg);
+}
+.maslo__card_active .maslo__card__image__pending {
+	transform: rotate(0deg) translateY(-54px);
+}
+.maslo__card_1_active .maslo__card__image__pending {
+	width: 68px;
+	height: 294px;
+}
+.maslo__card_2_active .maslo__card__image__pending {
+	width: 85px;
+	height: 295px;
+}
+.maslo__card_3_active .maslo__card__image__pending {
+	width: 64.45px;
+	height: 307.51px;
+}
+.maslo__card_4_active .maslo__card__image__pending {
+	width: 68px;
+	height: 306px;
+}
+
+
 #salat:checked ~ section img[class$="maslo__card__image_pending_salat"] {
 	width: 68px;
 	height: 294px;
