@@ -522,10 +522,20 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: url(../images/image_19-min.png) no-repeat right top, url(../images/image_21-min.png) no-repeat left bottom;
+	background-image: image-set("../images/logistics-left.webp" type("image/webp") 1x, 
+	"../images/logistics-left@2.webp" type("image/webp") 2x, 
+	"../images/logistics-left.png" type("image/png") 1x, 
+	"../images/logistics-left@2.png" type("image/png") 2x), 
+	image-set("../images/logistics-right.webp" type("image/webp") 1x, 
+	"../images/logistics-right@2.webp" type("image/webp") 2x, 
+	"../images/logistics-right.png" type("image/png") 1x, 
+	"../images/logistics-right@2.png" type("image/png") 2x);
+	background-repeat: no-repeat;
+	background-size: 232px 175px, 149px 186px;
+	background-position: calc(50% - 750px + 116px) bottom, calc(50% + 750px - 74.5px) top;
 }
 .logistics__inner {
-	width: calc(50% + 210px);
+	width: 50%;
 	height: 123px;
 	display: flex;
 	justify-content: flex-start;
@@ -534,14 +544,18 @@ h2 {
 .delivery {
 	flex-direction: row-reverse;
 	align-self: flex-start;
-	margin-left: -210px;
+	position: relative;
+	padding-right: 210px;
+	box-sizing: border-box;
 }
 .payment {
 	flex-direction: row;
 	align-self: flex-end;
-	margin-right: -210px;
+	position: relative;
+	padding-left: 210px;
+	box-sizing: border-box;
 }
-.logistics__items {
+.methods {
 	width: 100%;
 	height: 100%;
 	padding: 24px 24px 19px;
@@ -552,43 +566,77 @@ h2 {
 	background: #EDF4D2;
 	box-shadow: 10px 10px 35px rgba(190, 191, 183, 0.1);
 }
-.delivery .logistics__items {
+.delivery__methods {
 	justify-content: flex-end;
-} 
-.payment .logistics__items {
-	justify-content: flex-start;
+	gap: 64px;
 }
-.logistics__heading {
-	margin: 0 20px;
+.delivery__methods::after {
+	content: "- Доставка";
+	position: absolute;
+	display: inline;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	font-family: 'Amatic SC', cursive;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 125%;
+} 
+.payment__methods {
+	justify-content: flex-start;
+	gap: 61px;
+}
+.payment__methods::before {
+	content: "Оплата -";
+	position: absolute;
+	display: inline;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 	font-family: 'Amatic SC', cursive;
 	font-weight: 400;
 	font-size: 48px;
 	line-height: 125%;
 }
-.logistics__items figure {
+.method {
 	height: 80px;
-	margin: 0 32px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: end;
 	align-items: center;
-}
-.delivery .logistics__items figure:last-child {
-	margin-right: 0;
-}
-.payment .logistics__items figure:first-child {
-	margin-left: 0;
-}
-.logistics__items figure img {
-	width: 40px;
-	height: 40px;
-	text-align: center;
-}
-.logistics__items figcaption {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 24px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 40px 40px;
+}
+.delivery__method:nth-child(1) {
+	background-image: url(../images/delivery-truck.svg);
+}
+.delivery__method:nth-child(2) {
+	background-image: url(../images/box-1.svg);
+}
+.delivery__method:nth-child(3) {
+	background-image: url(../images/shop.svg);
+}
+.payment__method:nth-child(1) {
+	background-image: url(../images/coins.svg);
+}
+.payment__method:nth-child(2) {
+	background-image: url(../images/credit-card.svg);
+}
+.payment__method:nth-child(3) {
+	background-image: url(../images/cash.svg);
 }
 
 /* CONTACTS */
@@ -607,8 +655,26 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+	background-image: image-set("../images/image-contact.webp" type("image/webp") 1x, 
+	"../images/image-contact@2.webp" type("image/webp") 2x, 
+	"../images/image-contact.jpg" type("image/jpg") 1x, 
+	"../images/image-contact@2.jpg" type("image/jpg") 2x);
+	background-repeat: no-repeat;
+	background-size: 740px 472px;
+	background-position: 253px top;
 }
-.contacts__image {
+.contacts__content::before {
+	content: "";
+	position: absolute;
+	width: 195px;
+	height: 472px;
+	left: 127px;
+	bottom: 0;
+	opacity: 0.4;
+	background-color: var(--salat, #688800);
+	z-index: -1;
+}
+/* .contacts__image {
 	position: absolute;
 	width: 740px;
 	height: 472px;
@@ -618,7 +684,7 @@ h2 {
 .contacts__color {
 	height: 472px;
 	left: 127px;
-}
+} */
 .contacts__info {
 	position: absolute;
 	width: 425px;
