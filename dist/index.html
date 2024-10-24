@@ -70,12 +70,12 @@
 										<div class="content shopping-cart__product__content">
 											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image" alt="">
 											<div class="amount offer__amount shopping-cart__product__amount">
-												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
-												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												<button type="button" onclick="changeValue(this, -1, 1)">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number" data-index="1">
+												<button type="button" onclick="changeValue(this, 1, 1)">+</button>
 											</div>
 											<div class="price shopping-cart__product__price">
-												<div class="full-price shopping-cart__product__full-price">250</div>
+												<div class="full-price shopping-cart__product__full-price">115</div>
 												<label for="shopping-cart-product-1-close" class="close shopping-cart-product__close"><img src="images/close-1.svg" alt=""></label>
 											</div>
 										</div>
@@ -93,12 +93,12 @@
 										<div class="content shopping-cart__product__content">
 											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image" alt="">
 											<div class="amount offer__amount shopping-cart__product__amount">
-												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
-												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												<button type="button" onclick="changeValue(this, -1, 2)">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number" data-index="2">
+												<button type="button" onclick="changeValue(this, 1, 2)">+</button>
 											</div>
 											<div class="price shopping-cart__product__price">
-												<div class="full-price shopping-cart__product__full-price">250</div>
+												<div class="full-price shopping-cart__product__full-price">115</div>
 												<label for="shopping-cart-product-2-close" class="close shopping-cart-product__close"><img src="images/close-1.svg" alt=""></label>
 											</div>
 										</div>
@@ -110,18 +110,18 @@
 									<div class="fon shopping-cart__product__fon"></div>
 									<div class="wrap shopping-cart__product__wrap">
 										<div class="heading shopping-cart__product__heading">
-											<h5 class="caption shopping-cart__product__caption">Масло "Для салата"</h5>
+											<h5 class="caption shopping-cart__product__caption">Масло “Для мяса”"</h5>
 											<p class="subtitle shopping-cart__product__subtitle">250мл</p>
 										</div>
 										<div class="content shopping-cart__product__content">
 											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image" alt="">
 											<div class="amount offer__amount shopping-cart__product__amount">
-												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
-												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												<button type="button" onclick="changeValue(this, -1, 3)">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number" data-index="3">
+												<button type="button" onclick="changeValue(this, 1, 3)">+</button>
 											</div>
 											<div class="price shopping-cart__product__price">
-												<div class="full-price shopping-cart__product__full-price">250</div>
+												<div class="full-price shopping-cart__product__full-price">115</div>
 												<label for="shopping-cart-product-3-close" class="close shopping-cart-product__close"><img src="images/close-1.svg" alt=""></label>
 											</div>
 										</div>
@@ -133,18 +133,18 @@
 									<div class="fon shopping-cart__product__fon"></div>
 									<div class="wrap shopping-cart__product__wrap">
 										<div class="heading shopping-cart__product__heading">
-											<h5 class="caption shopping-cart__product__caption">Масло "Для салата"</h5>
+											<h5 class="caption shopping-cart__product__caption">Масло “Восточное”</h5>
 											<p class="subtitle shopping-cart__product__subtitle">250мл</p>
 										</div>
 										<div class="content shopping-cart__product__content">
 											<img src="images/soping-cart-salat.png" class="image shopping-cart__product__image" alt="">
 											<div class="amount offer__amount shopping-cart__product__amount">
-												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
-												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												<button type="button" onclick="changeValue(this, -1, 4)">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number" data-index="4">
+												<button type="button" onclick="changeValue(this, 1, 4)">+</button>
 											</div>
 											<div class="price shopping-cart__product__price">
-												<div class="full-price shopping-cart__product__full-price">250</div>
+												<div class="full-price shopping-cart__product__full-price">115</div>
 												<label for="shopping-cart-product-4-close" class="close shopping-cart-product__close"><img src="images/close-1.svg" alt=""></label>
 											</div>
 										</div>
@@ -289,7 +289,7 @@
 					<div class="swiper mySwiper offer__slider">
 						<div class="swiper-wrapper">
 	<!--SLIDE-1-->
-							<div class="swiper-slide">
+							<div class="swiper-slide swiper-slide_1">
 								<figure class="slide offer__slide">
 									<div class="image offer__image">
 										<!-- 1x: 260px; 2x: 519px; -->
@@ -318,9 +318,9 @@
 										<h3 class="caption offer__caption text">Масло “Для салата”</h3>
 										<p class="text desc offer__desc">Название говорит само за себя. Это идеальная заправка, которая даже скучной и привычной капусте придаст неповторимый вкус и аромат.</p>
 										<div class="amount offer__amount salat">
-											<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-											<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
-											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											<button type="button" onclick="changeValue(this, -1, 1)">-</button>
+											<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number" data-index="1">
+											<button type="button" onclick="changeValue(this, 1, 1)">+</button>
 										</div>
 										<div class="buttons offer__buttons">
 											<label for="salat" id="offer-button" class="button offer__button offer__button_more salat bg-but-salat">ПОДРОБНЕЕ</label>
@@ -360,9 +360,9 @@
 										<h3 class="caption offer__caption text">Масло “Итальянское”</h3>
 										<p class="text desc offer__desc text">Идеальное решение для легкого и быстрого маринада мяса, можно добавить капельку масла и после приготовления. </p>
 										<div class="amount offer__amount italian">
-											<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-											<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
-											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											<button type="button" onclick="changeValue(this, -1, 2)">-</button>
+											<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number" data-index="2">
+											<button type="button" onclick="changeValue(this, 1, 2)">+</button>
 										</div>
 										<div class="buttons offer__buttons">
 											<label for="italian" class="button offer__button offer__button_more italian bg-but-italian">ПОДРОБНЕЕ</label>
@@ -402,9 +402,9 @@
 										<h3 class="caption offer__caption text">Масло “Для мяса”</h3>
 										<p class="text desc offer__desc text">Название говорит само за себя. Это идеальная заправка, которая даже скучной и привычной капусте придаст неповторимый вкус и аромат.</p>
 										<div class="amount offer__amount meet">
-											<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-											<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
-											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											<button type="button" onclick="changeValue(this, -1, 3)">-</button>
+											<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number" data-index="3">
+											<button type="button" onclick="changeValue(this, 1, 3)">+</button>
 										</div>
 										<div class="buttons offer__buttons">
 											<label for="meet" class="button offer__button offer__button_more meet bg-but-meet">ПОДРОБНЕЕ</label>
@@ -444,9 +444,9 @@
 										<h3 class="caption offer__caption text">Масло “Восточное”</h3>
 										<p class="text desc offer__desc">Идеальное решение для легкого и быстрого маринада мяса, можно добавить капельку масла и после приготовления.</p>
 										<div class="amount offer__amount east">
-											<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-											<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number">
-											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+											<button type="button" onclick="changeValue(this, -1, 4)">-</button>
+											<input type="number" min="0" max="100" value="0" readonly class="number offer__amount__number" data-index="4">
+											<button type="button" onclick="changeValue(this, 1, 4)">+</button>
 										</div>
 										<div class="buttons offer__buttons">
 											<label for="east" class="button offer__button offer__button_more east bg-but-east">ПОДРОБНЕЕ</label>
@@ -494,9 +494,9 @@
 									<div class="meta maslo__card__meta">
 										<div class="purchase maslo__card__purchase">
 											<div class="amount maslo__card__amount salat">
-												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-												<input type="number" min="0" max="100" value="0" readonly class="number maslo__card__number">
-												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												<button type="button" onclick="changeValue(this, -1, 1)">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number maslo__card__number" data-index="1">
+												<button type="button" onclick="changeValue(this, 1, 1)">+</button>
 											</div>
 											<div class="inform maslo__card__inform">
 												<div class="volume maslo__card__volume text">250 мл</div>
@@ -534,9 +534,9 @@
 									<div class="meta maslo__card__meta">
 										<div class="purchase maslo__card__purchase">
 											<div class="amount maslo__card__amount italian">
-												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-												<input type="number" min="0" max="100" value="0" readonly class="number maslo__card__number">
-											<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												<button type="button" onclick="changeValue(this, -1, 2)">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number maslo__card__number" data-index="2">
+												<button type="button" onclick="changeValue(this, 1, 2)">+</button>
 												</div>
 											<div class="inform maslo__card__inform">
 												<div class="volume maslo__card__volume text">250 мл</div>
@@ -574,9 +574,9 @@
 									<div class="meta maslo__card__meta">
 										<div class="purchase maslo__card__purchase">
 											<div class="amount maslo__card__amount meet">
-												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-												<input type="number" min="0" max="100" value="0" readonly class="number maslo__card__number">
-												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												<button type="button" onclick="changeValue(this, -1, 3)">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number maslo__card__number" data-index="3">
+												<button type="button" onclick="changeValue(this, 1, 3)">+</button>
 											</div>
 											<div class="inform maslo__card__inform">
 												<div class="volume maslo__card__volume text">250 мл</div>
@@ -614,9 +614,9 @@
 									<div class="meta maslo__card__meta">
 										<div class="purchase maslo__card__purchase">
 											<div class="amount maslo__card__amount east">
-												<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-												<input type="number" min="0" max="100" value="0" readonly class="number maslo__card__number">
-												<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+												<button type="button" onclick="changeValue(this, -1, 4)">-</button>
+												<input type="number" min="0" max="100" value="0" readonly class="number maslo__card__number" data-index="4">
+												<button type="button" onclick="changeValue(this, 1, 4)">+</button>
 											</div>
 											<div class="inform maslo__card__inform">
 												<div class="volume maslo__card__volume text">250 мл</div>
@@ -902,11 +902,21 @@
 						<img class="image contacts__image" src="images/image-19.jpg" alt=""> -->
 						<figcaption class="info contacts__info">
 							<ul class="items contacts__items">
-								<li class="item contacts__item phone"><a href="tel:+38(066)1143558">+38 (066) 11-43-558</a></li>
-								<li class="item contacts__item facebook"><a href="https://www.facebook.com/r.olio8/">https://www.facebook.com/r.olio8/</a></li>
-								<li class="item contacts__item instagram"><a href="https://www.instagram.com/r.olio_/">https://www.instagram.com/r.olio_/</a></li>
-								<li class="item contacts__item telegram"><a href="https://t.me/r_olio">https://t.me/r_olio</a></li>
-								<li class="item contacts__item viber"><a href="viber://chat?number=+38(066)1143558">+38 (066) 11-43-558</a></li>
+								<li class="item contacts__item phone">
+									<a href="tel:+380661143558">+38 (066) 11-43-558</a>
+								</li>
+								<li class="item contacts__item facebook">
+									<a href="https://www.facebook.com/r.olio8/">https://www.facebook.com/r.olio8/</a>
+								</li>
+								<li class="item contacts__item instagram">
+									<a href="https://www.instagram.com/r.olio_/">https://www.instagram.com/r.olio_/</a>
+								</li>
+								<li class="item contacts__item telegram">
+									<a href="https://t.me/r_olio">https://t.me/r_olio</a>
+								</li>
+								<li class="item contacts__item viber">
+									<a href="viber://chat?number=+38(066)1143558">+38 (066) 11-43-558</a>
+								</li>
 							</ul>
 							<label for="feedback-open" class="button contacts__button salat bg-but-salat">НАПИСАТЬ НАМ</label>
 						</figcaption>
@@ -1029,6 +1039,7 @@
 
 
 	 <script src="js/offer-button.js"></script> 
+	 <script src="js/number.js"></script> 
 	 
 	 <!-- для WebP -->
 	 <!-- <script src="js/modernizr-custom.js"></script> -->
